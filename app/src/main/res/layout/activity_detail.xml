@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_picture_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.github.alexkolpa.fabtoolbar.FabToolbar
+            android:id="@+id/fab_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom"
+            tb:tb_button_gravity="end"
+            tb:tb_container_gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/add_photo"
+                style="@style/fabtoolbar_item_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_photo_camera_36dp"
+                android:contentDescription="@string/add_photo"/>
+
+            <ImageView
+                android:id="@+id/pdf"
+                style="@style/fabtoolbar_item_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_picture_as_pdf"
+                />
+
+            <ImageView
+                android:id="@+id/share"
+                style="@style/fabtoolbar_item_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_share_36dp"
+                />
+
+            <ImageView
+                android:id="@+id/print"
+                style="@style/fabtoolbar_item_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_local_printshop"
+                />
+
+            <ImageView
+                android:id="@+id/note"
+                style="@style/fabtoolbar_item_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_comment_36dp"
+                android:contentDescription="@string/note"/>
+
+        </com.github.alexkolpa.fabtoolbar.FabToolbar>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

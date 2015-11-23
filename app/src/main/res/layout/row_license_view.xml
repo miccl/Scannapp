@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_height="88dp"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    card_view:cardElevation="1dp">
+
+    <RelativeLayout
+        android:id="@+id/row_document"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_action_extension_trim_36dp"
+            />
+
+        <RelativeLayout
+            style="@style/row_double_line_style"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <michii.de.scannapp.rest.widget.TypefacedTextView
+                android:id="@+id/tv_title"
+                style="@style/row_primary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fonts:typeface="Roboto-Medium.ttf"
+                />
+
+            <michii.de.scannapp.rest.widget.TypefacedTextView
+                android:id="@+id/tv_summary"
+                style="@style/row_secondary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                fonts:typeface="Roboto-Regular.ttf"
+                android:text="@string/mock_secondary_text"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

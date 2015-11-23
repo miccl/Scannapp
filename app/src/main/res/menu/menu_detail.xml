@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="michii.de.scannapp._view.activities.DetailActivity">
+
+    <item
+        android:id="@+id/menu_item_add_gallery"
+        android:orderInCategory="1"
+        android:title="@string/menu_item_add_gallery"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_item_email"
+        android:orderInCategory="2"
+        android:title="@string/menu_item_email_yourself"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_item_assign_category"
+        android:orderInCategory="3"
+        android:title="@string/menu_item_assign_category"
+        app:showAsAction="never"/>
+
+
+    <!--<item-->
+        <!--android:id="@+id/menu_item_note"-->
+        <!--android:orderInCategory="4"-->
+        <!--android:title="@string/note"-->
+        <!--app:showAsAction="never"/>-->
+
+    <item
+        android:id="@+id/menu_item_ocr_document"
+        android:orderInCategory="5"
+        android:title="@string/menu_item_ocr"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_item_rename"
+        android:orderInCategory="6"
+        android:title="@string/menu_item_rename"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_item_delete_document"
+        android:orderInCategory="7"
+        android:title="@string/menu_item_delete_document"
+        app:showAsAction="never"/>
+
+</menu>

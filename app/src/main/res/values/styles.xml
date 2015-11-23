@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/list_activated_background</item>
+    </style>
+
+    <style name="MyCustomToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+    </style>
+
+    <style name="toolbarStyle">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/MyCustomToolBarTheme</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="row_icon_style">
+        <item name="android:layout_marginLeft">12dp </item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="row_icon_single_style">
+        <item name="android:layout_marginLeft">@dimen/row_icon_margin </item>
+        <item name="android:layout_marginRight">@dimen/row_icon_margin</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">38dp</item>
+        <item name="android:layout_height">38dp</item>
+    </style>
+
+
+    <style name="row_double_line_style">
+        <item name="android:layout_marginLeft">@dimen/row_text_margin_left </item>
+        <item name="android:layout_marginRight">@dimen/row_text_margin_left </item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="row_single_line_style">
+        <item name="android:layout_marginLeft">@dimen/row_text_margin_left </item>
+        <item name="android:layout_marginRight">@dimen/row_text_margin_left </item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="row_primary_text">
+        <item name="android:textSize">@dimen/textSize_subhead</item>
+        <item name="android:text">Primary Text</item>
+        <!--<item name="android:textColor">@color/colorPrimaryText</item>-->
+    </style>
+
+    <style name="row_secondary_text">
+        <item name="android:textSize">@dimen/textSize_body</item>
+        <item name="android:text">Secondary Text</item>
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
+
+    <style name="row_info">
+        <item name="android:text">5</item>
+        <item name="android:layout_marginLeft">@dimen/row_icon_margin</item>
+        <item name="android:layout_marginRight">@dimen/row_icon_margin</item>
+        <item name="android:textSize">@dimen/textSize_body</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/colorHintText</item>
+    </style>
+
+    <style name="fabtoolbar_item_style">
+        <item name="android:padding"> @dimen/fab_toolbar_padding </item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+
+
+</resources>

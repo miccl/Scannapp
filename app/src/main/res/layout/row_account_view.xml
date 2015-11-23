@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fonts="http://schemas.android.com/apk/res-auto"
+
+                android:id="@+id/item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/row_tile_double_line_height"
+                android:orientation="horizontal"
+                android:background="?android:attr/activatedBackgroundIndicator">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/row_document">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:src="@drawable/ic_row_account"
+            android:layout_centerVertical="true"
+            style="@style/row_icon_style"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/row_double_line_style">
+
+            <michii.de.scannapp.rest.widget.TypefacedTextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fonts:typeface="Roboto-Medium.ttf"
+                style="@style/row_primary_text"
+                />
+
+
+            <michii.de.scannapp.rest.widget.TypefacedTextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                style="@style/row_secondary_text"
+                fonts:typeface="Roboto-Regular.ttf"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--<michii.de.scannapp.rest.widget.TypefacedTextView-->
+        <!--android:id="@+id/tv_info"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--fonts:typeface="Roboto-Regular.ttf"-->
+        <!--style="@style/row_info"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+//apply from: '../.publishing/sonatype.gradle'
+
+archivesBaseName = 'android-crop'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+
+        testApplicationId 'com.soundcloud.android.crop.test'
+        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-annotations:21.0.0'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+}
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/activatedBackgroundIndicator"
+    android:orientation="horizontal"
+    card_view:cardElevation="1dp">
+
+    <RelativeLayout
+        android:id="@+id/item"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_thumbnail_height"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_box"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignBottom="@+id/iv_image"
+            android:orientation="horizontal"
+            android:background="@color/background_transulent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:singleLine="true"
+                android:layout_centerVertical="true">
+
+                <michii.de.scannapp.rest.widget.TypefacedTextView
+                    android:id="@+id/tv_title"
+                    style="@style/row_primary_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    fonts:typeface="Roboto-Medium.ttf"
+                    android:textColor="@android:color/white"/>
+
+                <michii.de.scannapp.rest.widget.TypefacedTextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_title"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    fonts:typeface="Roboto-Regular.ttf"
+                    style="@style/row_secondary_text"/>
+            </RelativeLayout>
+
+            <michii.de.scannapp.rest.widget.TypefacedTextView
+                android:id="@+id/tv_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white"
+                fonts:typeface="Roboto-Regular.ttf"
+                style="@style/row_info"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

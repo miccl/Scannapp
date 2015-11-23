@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="toolbarStyle">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:theme">@style/MyCustomToolBarTheme</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:elevation">4dp</item>
+
+    </style>
+
+    <style name="MyCustomToolBarTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:elevation">4dp</item>
+    </style>
+    
+</resources>

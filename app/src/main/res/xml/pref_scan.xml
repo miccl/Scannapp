@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_header_scan">
+        <SwitchPreference
+            android:key="pref_key_auto_crop"
+            android:title="Automatic crop"
+            android:defaultValue="true"
+            />
+        <michii.de.scannapp.rest.utils.SeekBarPreference
+            android:key="@string/pref_key_image_quality"
+            android:title="@string/pref_title_image_quality"
+            android:defaultValue="@integer/pref_default_image_quality"
+            android:dialogMessage=""
+            android:max="100"
+            android:text="%"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>

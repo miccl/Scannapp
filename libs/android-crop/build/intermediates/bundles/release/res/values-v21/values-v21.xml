@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/Dokumente/1_Programmierung/Android/Projekte/Bachelor/0_Main/Scannapp/libs/android-crop/src/main/res/values-v21/colors.xml -->
+    <eat-comment/>
+    <color name="crop__selector_pressed">#aaaaaa</color>
+</resources>

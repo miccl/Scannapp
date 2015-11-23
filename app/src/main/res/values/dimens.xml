@@ -1,0 +1,27 @@
+<resources>
+ <!-- Default screen margins, per the Android Design guidelines. -->
+
+ <!-- Textsizes -->
+ <dimen name="textSize_subhead">16sp</dimen>
+ <dimen name="textSize_body">14sp</dimen>
+
+ <!-- Navigation Drawer adjustments -->
+
+ <!-- Imagesizes -->
+ <dimen name="image_thumbnail_height">180dp</dimen> <!--2.5*72dp -->
+ <dimen name="image_thumbnail_spacing">1dp</dimen>
+
+ <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+ -->
+ <dimen name="row_icon_margin">16dp</dimen>
+ <dimen name="row_tile_single_line_height">56dp</dimen>
+ <dimen name="row_tile_double_line_height">72dp</dimen>
+ <dimen name="row_text_margin_left">72dp</dimen>
+ <dimen name="row_text_margin_right">16dp</dimen>
+ <dimen name="header_icon_width">28dp</dimen>
+ <dimen name="fab_toolbar_padding">16dp</dimen>
+
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fonts="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:orientation="horizontal"
+    android:background="?android:attr/activatedBackgroundIndicator">
+
+
+
+    <michii.de.scannapp.rest.widget.TypefacedTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fonts:typeface="Roboto-Bold.ttf"
+        android:singleLine="true"
+        android:text="@string/mock_primary_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true" />
+
+    <michii.de.scannapp.rest.widget.TypefacedTextView
+        android:id="@+id/text_number"
+        style="@style/row_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        fonts:typeface="Roboto-Regular.ttf" />
+
+
+</RelativeLayout>

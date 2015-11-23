@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="about_title">
+        <item>Contact</item>
+        <item>Contribute</item>
+        <item>Help</item>
+        <item>License</item>
+    </string-array>
+
+
+
+    <string-array name="about_summary">
+        <item>Learn more about the creator </item>
+        <item>Give your feedback</item>
+        <item>Learn useful tips </item>
+        <item>Learn about used OpenSource software</item>
+    </string-array>
+
+
+    <string-array name="license_title">
+        <item>Aviary SDK</item>
+        <item>android-crop</item>
+        <item>tesseract-ocr</item>
+        <item>iText</item>
+        <item>RushORM</item>
+        <item>MaterialDrawer</item>
+        <item>EventBus</item>
+    </string-array>
+
+    <string-array name="license_summary">
+        <item>provides a solution for developers seeking to add powerful photo editing</item>
+        <item> provides a simple image cropping Activity, based on code from AOSP</item>
+        <item>probably the most accurate open source OCR engine available</item>
+        <item>allows to create and manipulate PDF documents </item>
+        <item>replaces the need for SQL by mapping java classes to SQL tables</item>
+        <item>aims to provide the easiest possible implementation of a navigation drawer</item>
+        <item>publish/subscribe event bus optimized for Android</item>
+    </string-array>
+
+    <string-array name="license_url">
+        <item>https://creativesdk.adobe.com/</item>
+        <item>https://github.com/jdamcd/android-crop</item>
+        <item>https://code.google.com/p/tesseract-ocr/</item>
+        <item>http://itextpdf.com/</item>
+        <item>http://www.rushorm.com/</item>
+        <item>https://github.com/mikepenz/MaterialDrawer</item>
+        <item>https://github.com/greenrobot/EventBus</item>
+    </string-array>
+
+    <string-array name="license_license">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+    <string-array name="languageValues">
+        <item>eng</item>
+        <item>deu</item>
+    </string-array>
+
+    <string-array name="languageArray">
+        <item>English</item>
+        <item>Deutsch</item>
+    </string-array>
+
+</resources>

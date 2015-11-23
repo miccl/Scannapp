@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fonts="http://schemas.android.com/apk/res-auto"
+
+                android:id="@+id/item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/row_tile_single_line_height"
+                android:orientation="horizontal"
+                android:background="?android:attr/activatedBackgroundIndicator">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:id="@+id/row_document">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:src="@drawable/ic_row_tag"
+            style="@style/row_icon_single_style"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            style="@style/row_single_line_style"
+            android:id="@+id/relativeLayout">
+
+            <michii.de.scannapp.rest.widget.TypefacedTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fonts:typeface="Roboto-Medium.ttf"
+                style="@style/row_primary_text"/>
+
+        </RelativeLayout>
+
+        <michii.de.scannapp.rest.widget.TypefacedTextView
+            android:id="@+id/text_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            fonts:typeface="Roboto-Regular.ttf"
+
+
+            style="@style/row_info"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
