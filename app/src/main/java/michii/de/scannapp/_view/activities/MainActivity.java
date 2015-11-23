@@ -60,6 +60,7 @@ public class MainActivity extends BusActivity implements View.OnClickListener,
         CropFragment.OnFragmentInteractionListener, EditFragment.OnFragmentInteractionListener {
 
 
+    //Testerino
     private static final String TAG = MainActivity.class.getSimpleName();
 
     private static final int PROFILE_ITEM_MANAGE = 2;
