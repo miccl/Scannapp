@@ -1,3 +1,3 @@
 # Scannapp
-Testerino 
-More Testerino
+
+Android app to scan documents and do text recognition.
